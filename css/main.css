@@ -1,0 +1,117 @@
+/* Font and margin */
+body {
+  font-family: 'Palatino Linotype', Times, sans-serif;
+  margin: 0;
+}
+
+/* Padding in navigation links */
+.main-nav a {
+  padding: 10px;
+  }
+  
+  /* Fix the navbar at top */
+  .main-nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom-style: solid;
+    border-color: olive;
+    background-color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  /* Links inside the navbar */
+  .main-nav a {
+    float: right;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  /* Text inside navbar */
+  .main-nav p{
+      float: left;
+      margin: 0;
+      margin-left: 10%;
+      margin-top: 10px;
+  }
+  
+  /* Change background on mouse-over */
+  .main-nav a:hover {
+    color: blueviolet;
+  }
+
+/* Style the header */
+.header {
+  margin-top: 5%;
+  text-align: center;
+  color: black;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 30px;
+}
+
+/* Margins in the bio */
+p#bio {
+  margin-right: 20%;
+  margin-left: 20%;
+  text-align: left;
+  padding: 0
+}
+
+/* Remove underline in paragraph link */
+p a:link {
+  text-decoration: none;
+}
+
+/* Underline links when hover in paragraph */
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Color links when hovering */
+a:hover {
+  color: blueviolet;
+}
+
+/* Links inherit color */
+a {
+    color: inherit;
+}
+
+
+/* Center table */
+.table {
+	display: table;   
+	margin: auto;
+}
+
+/* Unordered icon list padding */
+ul#icons {
+	list-style: none;
+  padding:0%;
+  margin:0%;
+	padding-top: 5px;
+	}
+
+/* Display unordered icon list in single line */
+ul#icons li {
+		display: inline;
+}
+
+/* List format */
+li {
+  float: center;
+}
+
+/* List link formatting */
+li a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
