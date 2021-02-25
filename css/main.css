@@ -3,14 +3,9 @@ body {
   font-family: 'Palatino Linotype', Times, sans-serif;
   margin: 0;
 }
-
-/* Padding in navigation links */
-.main-nav a {
-  padding: 10px;
-  }
   
   /* Fix the navbar at top */
-  .main-nav {
+  .header {
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -20,19 +15,22 @@ body {
     background-color: white;
     margin-top: 0px;
     margin-bottom: 0px;
+    text-align: center;
+    padding-bottom: 5px;
   }
   
   /* Links inside the navbar */
   .main-nav a {
-    float: right;
-    display: block;
+    float: center;
+    display: inline;
     text-align: center;
     text-decoration: underline;
+    padding: 10px;
   }
   
   /* Text inside navbar */
   .main-nav p{
-      float: left;
+      float: center;
       margin: 0;
       margin-left: 10%;
       margin-top: 10px;
@@ -43,24 +41,33 @@ body {
     color: blueviolet;
   }
 
-/* Style the header */
-.header {
-  margin-top: 50px;
-  text-align: center;
-  color: black;
-}
-
 /* Increase the font size of the h1 element */
 .header h1 {
   font-size: 30px;
 }
 
-/* Margins in the bio */
-p#bio {
+.row{
   margin-right: 20%;
   margin-left: 20%;
-  text-align: left;
-  padding: 0
+  padding-top: 150px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 45%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img{
+  float: right;
+  padding-top: 10px;
 }
 
 /* Remove underline in paragraph link */
