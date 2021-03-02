@@ -1,95 +1,15 @@
+/*** GENERAL ***/
 /* Font and margin */
 body {
-  font-family: 'Palatino Linotype', Times, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
 }
-  
-  /* Fix the navbar at top */
-  .header {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    border-bottom-style: solid;
-    border-color: olive;
-    background-color: white;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: center;
-    padding-bottom: 5px;
-  }
-  
-  /* Links inside the navbar */
-  .main-nav a {
-    float: center;
-    display: inline;
-    text-align: center;
-    text-decoration: underline;
-    padding: 10px;
-  }
-  
-  /* Text inside navbar */
-  .main-nav p{
-      float: center;
-      margin: 0;
-      margin-left: 10%;
-      margin-top: 10px;
-  }
-  
-  /* Change background on mouse-over */
-  .main-nav a:hover {
-    color: blueviolet;
-  }
 
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 30px;
+/* List format */
+li {
+  float: center;
+  display: inline;
 }
-
-.row{
-  margin-right: 20%;
-  margin-left: 20%;
-  padding-top: 150px;
-}
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 45%;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-img{
-  float: right;
-  padding-top: 10px;
-}
-
-/* Remove underline in paragraph link */
-p a:link {
-  text-decoration: none;
-}
-
-/* Underline links when hover in paragraph */
-p a:hover {
-  text-decoration: underline;
-}
-
-/* Color links when hovering */
-a:hover {
-  color: blueviolet;
-}
-
-/* Links inherit color */
-a {
-    color: inherit;
-}
-
 
 /* Center table */
 .table {
@@ -97,22 +17,35 @@ a {
 	margin: auto;
 }
 
-/* Unordered icon list padding */
-ul#icons {
-	list-style: none;
-  padding:0%;
-  margin:0%;
-	padding-top: 5px;
-	}
 
-/* Display unordered icon list in single line */
-ul#icons li {
-		display: inline;
+
+/*** LINK STYLE ***/
+/* Links inherit color */
+a {
+    color: inherit;
 }
 
-/* List format */
-li {
+/* Color links when hovering */
+a:hover {
+  color: blueviolet;
+}
+
+/* Links inside the navbar */
+.main-nav a {
   float: center;
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* Paragraph link settings */
+p a {
+  text-decoration: none;
+  color: olive;
 }
 
 /* List link formatting */
@@ -121,4 +54,231 @@ li a {
   text-align: center;
   padding: 16px;
   text-decoration: none;
+  padding-top: 50px;
+}
+
+
+
+/*** HEADER STYLE ***/
+/* Fix header and settings */
+.header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding-bottom: 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 2px;   
+  z-index: 99;
+}
+
+/* Name font size */
+.header h1 {
+  font-size: 40px;
+}
+  
+/* Text inside navbar */
+.main-nav p{
+  float: center;
+  margin: 0;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+
+
+/*** BORDER STYLE ***/
+/* Border settings */
+hr {
+  border: 2px solid olive;
+  position: relative;
+  z-index: -1;
+  margin: 50px 0px;
+  top: -40px
+}
+
+/* First border position */
+#first-break {
+  position: relative;
+  top: -100px;
+}
+
+/* Second border position */
+#second-break {
+  position: relative;
+  top: -150px;
+}
+
+
+
+/*** INDEX STYLE ***/
+/* Row on index */
+.row{
+  margin-right: 20%;
+  margin-left: 20%;
+  padding-top: 170px;
+}
+
+/* Columns */
+.column {
+  float: left;
+  width: 45%;
+}
+
+/* Index image settings */
+.column img{
+  float: right;
+  padding-top: 21px;
+}
+
+/* Clear floats after columns */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Icon padding */
+#icons {
+	list-style: none;
+  padding:0%;
+  margin:0%;
+	padding-top: 5px;
+}
+
+/* Layout settings for resizing */
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+    padding-right: 50px;
+  }
+  
+  .column {
+    float: left;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+  }
+}
+
+
+
+/*** PROJECT STYLE ***/
+/* Main project container padding */
+.project-list{
+  padding-top: 170px;
+  margin: 0% 10%;
+  margin-bottom: -100px;
+}
+
+/* Container for flexboxes */
+.project-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Project text column */
+.desc-column {
+  float: left;
+  width: 65%;
+}
+
+/* Project image column */
+.img-column {
+  float: left;
+  width: 35%;
+}
+
+/* Project image settings */
+.img-column img{
+  width: 350px;
+  padding-left: 50px;
+  position: relative;
+  top: -70px;
+  z-index: 1;
+}
+
+/* MDS title position */
+#mds-title {
+  position: relative; 
+  top: -125px;
+  z-index: 1;
+}
+
+/* MDS text position */
+#mds {
+  position: relative; 
+  top: -125px;
+  z-index: 1;
+}
+
+/* MDS link settings */
+#mds a{
+  position: relative;
+  z-index: 1;
+}
+
+/* MDS image position */
+#mds-img {
+  position: relative; 
+  top: -145px;
+  right: -20px;
+  z-index: 1;
+}
+
+/* RTI project position */
+#rti-project{
+  position: relative;
+  top: -160px;
+  z-index: 1;
+}
+
+/* DoSS project position*/
+#doss-project{
+  position: relative;
+  top: -210px;
+  z-index: 1;
+}
+
+/* Project icon list padding */
+#project-icons {
+	list-style: none;
+  padding:0%;
+  margin:0%;
+	padding-top: 0;
+  position: relative;
+  top: -50px;
+  z-index: 1;
+	}
+
+/* Layout settings for resizing */
+@media screen and (max-width: 800px) {
+  .project-row {
+    flex-direction: column;
+    padding-right: 50px;
+  }
+  
+  .project-row img{
+    padding: 50px 0px;
+  }
+
+  .desc-column {
+    float: left;
+    width: 100%;
+    margin-left: 50px
+  }
+  
+  .img-column {
+    float: left;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

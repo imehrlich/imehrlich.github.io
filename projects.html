@@ -1,36 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Dan Ehrlich</title>
+<title>Isaac Ehrlich</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="figures/favicon.png">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Source+Sans+Pro&family=Roboto&display=swap'>
 <script src="https://kit.fontawesome.com/4252f78cb9.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <div class="header">
-        <h1>Dan Ehrlich</h1>
+        <h1>Isaac Ehrlich</h1>
       
         <div class="main-nav">  
           <a href="https://imehrlich.github.io">About</a>
           <a href="https://imehrlich.github.io/projects">Projects</a>
-          <a href="figures/cv.pdf" target="_blank">CV</a>
+          <a href="files/résumé.pdf" target="_blank">Résumé</a>
         </div>
       
       </div>
 
 
+    <div class="project-list">
+      <h2> Multisensory Humor Detection </h2>
+      <div class="project-row">
+        <div class="desc-column">
+          <p> Most humor detection models only focus on language and the text itself. This is effective for traditional one-liners, but humor is often contextual and dependent on visual cues - after all, if you're not a shark, there may not be anything inherently amusing about carrying groceries. So how well do these models perform in a world of comic strips and memes? And can these models be improved by integrating contextual input parameters? Using data from the New Yorker Caption Contest, we combined NLP and ML techniques to create a multisensory humor detection model and improved detection accuracy of contextual humor. You can read a brief paper about the project <a href="https://github.com/imehrlich/humor_detect/blob/master/Contextual_Humor_Detection.pdf" target="_blank">here</a>.
+          </p>
+        </div>
+        <div class="img-column">
+          <img src="figures/nycc.png" alt="" title="Lunch is on me today"/>
+        </div>
+      </div>
+      <hr id="first-break">
+
+      <div class="project-row">
+        <h2 id="mds-title"> Learning Category Structure through Multidimensional Scaling </h2>
+        <div class="desc-column">
+          <div id="mds">
+            <p> Multidimensional scaling (MDS) has provided insight into the structure of human category perception. However, MDS usually requires participants to produce large numbers of similarity judgements, leading to prohibitively long experiments for developmental research. We propose and validate a method that combines simple grouping tasks with recent neural network models to efficiently uncover ‘psychological spaces’ of categories. We apply this method to data from the <a href="http://www1.icsi.berkeley.edu/wcs/" target="_blank">World Color Survey</a> and successfully uncover language-specific color organization. We also use this method to analyse data from a novel developmental experiment, and reaffirm age-related differences in conceptual spaces. We've presented our findings at the <a href=https://cogsci.mindmodeling.org/2020/papers/0574/index.html target="_blank">Annual Meeting of the Cognitive Science Society</a> and the <a href="http://bcccd.org/welcome.htm" target="_blank">Budapest CEU Conference on Cognitive Development</a>.</p>
+          </div>  
+        </div>
+        <div class="img-column">
+          <img id="mds-img" src="figures/categories.png" alt="" title="This PCA has absolutely no experimental value, but I think it looks pretty"/>
+        </div>
+      </div>
+      <hr id="second-break">
+
+      <div id="rti-project">
+        <h2> Reducing Avoidable Nursing Home Hospitalizations </h2>
+          <div>
+            <p>Long-stay nursing facility residents often experience hospitalizations for conditions that can be treated within the facility. Since hospitalizations are typically expensive, disruptive, and disorienting to senior nursing facility residents, minimizing these potentially avoidable hospitalizations improves residents’ quality of care. In 2012, The <a href="https://www.cms.gov/Medicare-Medicaid-Coordination/Medicare-and-Medicaid-Coordination/Medicare-Medicaid-Coordination-Office/InitiativetoReduceAvoidableHospitalizations/AvoidableHospitalizationsamongNursingFacilityResidents" target="_blank"> Centers for Medicare and Medicaid Services (CMS)</a> launched an initiative to reduce avoidable hospitalizations by implementing clinical and educational interventions, providing billing incentives, and/or adding support staff to select nursing facilities across six states. Our <a href="https://downloads.cms.gov/files/cmmi/rahnfr-phasetwo-secondannrpt.pdf" target="_blank">report</a> evaluates the success of the Initiative, and broadly finds that facilities within the initiative reduced hospitalizations, but billing and payment incentives did not consistently result in additional significant reductions.</p>
+          </div>  
+          <img id="mds-img" src="" alt=""/>
+        <hr>
+      </div>
+
+      <div id="doss-project">
+        <h2> R Essentials Package </h2>
+          <div>
+            <p>The <a href="https://www.statistics.utoronto.ca/" target="_blank">Department of Statistical Sciences (DoSS)</a> at the University of Toronto has recently seen a sharp increase in applications and interest. Students from a wide array of backgrounds are beginning to take courses in statistics, and the DoSS is looking for a way to streamline R education across courses. The <a href="https://www.dosstoolkit.com/" target="_blank">DoSS Toolkit</a> is a free series of open source R lessons available to undergraduate students at the university as well as the general public. Covering everything from installation to tidyverse functions, these lessons include video tutorials, detailed walk-throughs, and sample exercises. We are currently working on completing these modules and creating summative assessments.</p>
+            </div>
+      </div>
+    </div>
+
+
 
     <div id="menu-outer">
     <div class="table">
-        <ul id="icons">
+        <ul id="project-icons">
         <li><a href="mailto:isaac.ehrlich@mail.utoronto.ca" target="_blank" class="fas fa-envelope fa-lg"><span class="label"></span></a></li>
-        <li><a href="https://github.com/deehrlich" target="_blank" class="fab fa-github fa-lg"><span class="label"></span></a></li>
-        <li><a href="https://www.linkedin.com/in/dan-ehrlich-03423ab4/" target="_blank" class="fab fa-linkedin fa-lg"><span class="label"></span></a></li>
-        <li><a href="https://twitter.com/deehrlich" target="_blank" class="fab fa-twitter-square fa-lg"><span class="label"></span></a></li>
-        </ul>
+        <li><a href="https://github.com/imehrlich" target="_blank" class="fab fa-github fa-lg"><span class="label"></span></a></li>
+        <li><a href="https://www.linkedin.com/in/isaac-ehrlch/" target="_blank" class="fab fa-linkedin fa-lg"><span class="label"></span></a></li>
+       </ul>
     </div>
     </div>
 
