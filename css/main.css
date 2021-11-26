@@ -121,7 +121,7 @@ hr {
 .row{
   margin-right: 20%;
   margin-left: 20%;
-  padding-top: 145px;
+  padding-top: 135px;
 }
 
 /* Columns */
@@ -232,6 +232,13 @@ hr {
   z-index: 1;
 }
 
+/* Synesthesia image */
+#syn-img{
+  z-index: 1;
+  width: 115%;
+  right: 20px
+}
+
 /* RTI project position */
 #rti-project{
   position: relative;
@@ -255,7 +262,11 @@ hr {
   position: relative;
   top: -50px;
   z-index: 1;
-	}
+}
+
+#original {
+    margin-top: -100px;
+}
 
 /* Layout settings for resizing */
 @media screen and (max-width: 800px) {
