@@ -1,295 +1,168 @@
-/*** GENERAL ***/
-/* Font and margin */
+/*** GENERAL STYLE***/
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
+  padding: 0;
+  line-height: 1.5;
 }
 
-/* List format */
-li {
-  float: center;
-  display: inline;
-}
-
-/* Center table */
-.table {
-	display: table;   
-	margin: auto;
-}
-
-
-
-/*** LINK STYLE ***/
-/* Links inherit color */
 a {
-    color: inherit;
+  color: olive;
+  text-decoration: none;
 }
 
-/* Color links when hovering */
 a:hover {
   color: blueviolet;
 }
 
-/* Links inside the navbar */
-.main-nav a {
-  float: center;
-  display: inline;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px;
-  font-family: "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-/* Paragraph link settings */
-p a {
-  text-decoration: none;
-  color: olive;
-}
-
-/* List link formatting */
-li a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-  padding-top: 50px;
-}
-
-
-
-/*** HEADER STYLE ***/
-/* Fix header and settings */
+/*** HEADER ***/
 .header {
   overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
   background-color: white;
-  margin-top: 0px;
-  margin-bottom: 0px;
   text-align: center;
-  padding-bottom: 5px;
+  padding: 10px 0;
   font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 1px;
-  word-spacing: 2px;   
+  word-spacing: 1px;   
   z-index: 99;
 }
 
-/* Name font size */
 .header h1 {
   font-size: 40px;
-}
-  
-/* Text inside navbar */
-.main-nav p{
-  float: center;
   margin: 0;
-  margin-left: 10%;
-  margin-top: 10px;
 }
 
-
-
-/*** BORDER STYLE ***/
-/* Border settings */
-hr {
-  border: 2px solid olive;
-  position: relative;
-  z-index: -1;
-  margin: 50px 0px;
-  top: -40px
+.main-nav {
+  margin-top: 0px;
 }
 
-/* First border position */
-#first-break {
-  position: relative;
-  top: -100px;
+.main-nav a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: black;
 }
 
-/* Second border position */
-#second-break {
-  position: relative;
-  top: -150px;
+.main-nav a:hover {
+  color: blueviolet;
 }
 
-
-
-/*** INDEX STYLE ***/
-/* Row on index */
-.row{
-  margin-right: 20%;
-  margin-left: 20%;
-  padding-top: 135px;
+/*** MAIN CONTENT ***/
+.content {
+  flex: 1;
+  padding: 130px 10% 50px;
 }
 
-/* Columns */
-.column {
-  float: left;
-  width: 45%;
+.bio-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Index image settings */
-.column img{
-  float: right;
-  padding-top: 21px;
+.bio-text {
+  flex: 1;
+  min-width: 300px;
 }
 
-/* Clear floats after columns */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.bio-image {
+  flex: 1;
+  text-align: center;
 }
 
-/* Icon padding */
-#icons {
-	list-style: none;
-  padding:0%;
-  margin:0%;
-	padding-top: 0px;
+.bio-image img {
+  max-width: 80%;
+  height: auto;
 }
 
-/* Layout settings for resizing */
-@media screen and (max-width: 800px) {
-  .row {
-    flex-direction: column;
-    padding-right: 50px;
-  }
-  
-  .column {
-    float: left;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block
-  }
+.project-list {
+  padding: 100px 10% 50px;
 }
 
-
-
-/*** PROJECT STYLE ***/
-/* Main project container padding */
-.project-list{
-  padding-top: 170px;
-  margin: 0% 10%;
-  margin-bottom: -100px;
+.project {
+  margin-bottom: 0px;
 }
 
-/* Container for flexboxes */
+.project h2 {
+  margin-bottom: 0px;
+}
+
 .project-row {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
 }
 
-/* Project text column */
 .desc-column {
-  float: left;
-  width: 65%;
+  flex: 1.75;
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
 }
 
-/* Project image column */
 .img-column {
-  float: left;
-  width: 35%;
+  flex: 1;
+  text-align: center;
 }
 
-/* Project image settings */
-.img-column img{
-  width: 350px;
-  padding-left: 50px;
+.img-column img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+hr {
+  border: 2px solid olive;
+  margin: 30px 0;
+}
+
+/*** FOOTER ***/
+.footer {
+  background-color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
   position: relative;
-  top: -70px;
-  z-index: 1;
+  bottom: 0;
 }
 
-/* MDS title position */
-#mds-title {
-  position: relative; 
-  top: -125px;
-  z-index: 1;
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
-/* MDS text position */
-#mds {
-  position: relative; 
-  top: -125px;
-  z-index: 1;
+.social-icons li {
+  display: inline;
 }
 
-/* MDS link settings */
-#mds a{
-  position: relative;
-  z-index: 1;
+.social-icons a {
+  font-size: 20px;
+  color:black;
 }
 
-/* MDS image position */
-#mds-img {
-  position: relative; 
-  top: -145px;
-  right: -20px;
-  z-index: 1;
-}
-
-/* Synesthesia image */
-#syn-img{
-  z-index: 1;
-  width: 115%;
-  right: 20px
-}
-
-/* RTI project position */
-#rti-project{
-  position: relative;
-  top: -160px;
-  z-index: 1;
-}
-
-/* DoSS project position*/
-#doss-project{
-  position: relative;
-  top: -210px;
-  z-index: 1;
-}
-
-/* Project icon list padding */
-#project-icons {
-	list-style: none;
-  padding:0%;
-  margin:0%;
-	padding-top: 0;
-  position: relative;
-  top: -50px;
-  z-index: 1;
-}
-
-#original {
-    margin-top: -100px;
-}
-
-/* Layout settings for resizing */
-@media screen and (max-width: 800px) {
-  .project-row {
-    flex-direction: column;
-    padding-right: 50px;
-  }
-  
-  .project-row img{
-    padding: 50px 0px;
-  }
-
-  .desc-column {
-    float: left;
-    width: 100%;
-    margin-left: 50px
-  }
-  
-  .img-column {
-    float: left;
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.social-icons a:hover {
+  color: blueviolet;
 }
